@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./output.css">
+        <title>UI/UX</title>
+        <style>
+            .card_model {
+                clip-path: polygon(0 0, 30% 0, 40% 20px, 100% 20px, 100% 100%, 0 100%);
+                border-radius: 20px;
+            }
+        </style>
+    </head>
+    <body id="main" class="p-0 m-0 font-poppins relative flex flex-col items-start justify-start">
+        <!-- Header -->
+        <header class="fixed top-0 z-50 w-full bg-defaultColorHeader shadow-defaultColorHeader/80 shadow-lg">
+            <div class="m-auto max-w-[550px] md:max-w-[700px] lg:max-w-[850px] xl:max-w-[1200px] w-full flex flex-row items-center justify-between py-2 px-6 md:px-0">
+                <img src="./assets/logo.png" alt="Logo Markly" />
+                <i onclick="mostrarMenu()" id="menu" class="block md:hidden text-white text-2xl fas fa-bars"></i>
+                <i onclick="fecharMenu()" id="close" class="hidden text-white text-2xl fas fa-x"></i>
+                <ul class="uppercase hidden md:flex md:flex-row items-center gap-6 text-white font-medium">
+                    <li><a href="" class="transition-all ease-in-out duration-300 hover:text-defaultYellow">Home</a></li>
+                    <li><a href="" class="transition-all ease-in-out duration-300 hover:text-defaultYellow">Serviços</a></li>
+                    <li><a href="" class="transition-all ease-in-out duration-300 hover:text-defaultYellow">Portfólio</a></li>
+                    <li><a href="" class="transition-all ease-in-out duration-300 hover:text-defaultYellow">Contato</a></li>
+                </ul>
+                <button class="hidden md:block transition-all ease-in-out duration-500 bg-gradient-to-r from-defaultYellow to-defaultOrange rounded-full text-white text-center py-[8px] px-6 font-medium hover:scale-105">
+                    Orçamento
+                </button>
+            </div>
+        </header>
+        <div id="opcoesMenu" class="hidden transition-all ease-in-out duration-300 w-0 h-[100vh] bg-defaultColorHeader">
+            <ul class="uppercase flex flex-col justify-start items-start gap-6 p-6 text-white font-medium mt-20">
+                <li><a href="" class="hover:text-defaultYellow">Home</a></li>
+                <li><a href="" class="hover:text-defaultYellow">Serviços</a></li>
+                <li><a href="" class="hover:text-defaultYellow">Portfólio</a></li>
+                <li><a href="" class="hover:text-defaultYellow">Contato</a></li>
+            </ul>
+        </div>
+        <!-- Section_1 -->
+        <div class="w-full h-auto xl:h-[100vh] bg-defaultColor">
+            <div 
+                class="w-full h-full flex flex-col lg:flex lg:flex-row items-center justify-between gap-6 m-auto max-w-[550px] md:max-w-[700px] lg:max-w-[850px] xl:max-w-[1200px] py-24"
+            >
+                <div class="w-full flex flex-col items-start justify-start gap-6 px-6 sm:px-0">
+                    <h1 class="text-white text-2xl sm:text-4xl font-bold tracking-wide sm:leading-[55px] sm:w-96">
+                        DESPERTE O POTENCIAL DO SEU NEGÓCIO 
+                        <span class="text-defaultYellow">ONLINE</span>
+                    </h1>
+                    <p class="text-base text-defaultSubtitle w-auto sm:w-[460px]">
+                        Criamos sites personalizados e estratégias digitais para maximizar sua presença na web e transformar visitantes em clientes. 
+                        Deixe-nos ajudar a destacar sua marca e alcançar novos patamares de sucesso online!
+                    </p>
+                    <div class="flex flex-col items-start sm:flex sm:flex-row sm:items-center gap-6">
+                        <button class="block transition-all ease-in-out duration-500 bg-gradient-to-r from-defaultLightPurple to-defaultDarkPurple rounded-full text-white text-center py-[8px] px-6 font-medium hover:scale-105">
+                            Orçamento
+                        </button>
+                        <button class="block transition-all ease-in-out duration-500 bg-white rounded-full text-defaultColor text-center py-[8px] px-6 font-medium hover:scale-105">
+                            Quero saber mais
+                        </button>
+                    </div>
+                </div>
+                <div class="relative flex flex-col items-center justify-center">
+                    <div class="hidden lg:block">
+                        <img 
+                            width="900" 
+                            height="900" 
+                            src="../markly/assets/desenhos/BG_mulher_notebook.png" 
+                            alt="Fundo roxo de imagem"
+                        />
+                    </div>
+                    <div class="block lg:hidden">
+                        <img 
+                            width="350" 
+                            height="350" 
+                            src="../markly/assets/desenhos/BG_mulher_notebook.png" 
+                            alt="Fundo roxo de imagem"
+                        />
+                    </div>
+                    <div class="hidden lg:block absolute right-28">
+                        <img src="../markly/assets/imagens/mulher_notebook.png" alt="Mulher com notebook" />
+                    </div>
+                    <div class="block lg:hidden absolute right-28">
+                        <img 
+                            width="350"
+                            height="350"
+                            src="../markly/assets/imagens/mulher_notebook.png" 
+                            alt="Mulher com notebook"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Section_2 -->
+        <div class="w-full h-auto relative xl:h-[100vh] bg-defaultColorHeader">
+            <div class="absolute -top-6 left-0">
+                <img src="./assets/desenhos/circulo_laranja.svg" alt="Circulo laranja" />
+            </div>
+            <div 
+                class="w-full h-full flex flex-col items-center justify-between gap-6 m-auto max-w-[550px] md:max-w-[700px] lg:max-w-[850px] xl:max-w-[1200px] py-24 px-6 sm:px-0"
+            >
+                <div class="w-full flex flex-col items-center justify-center gap-2 px-6 sm:px-0">
+                    <h2 class="text-defaultSubtitle text-center text-base sm:text-2xl font-bold tracking-wide">O que podemos fazer por você?</h2>
+                    <h2 class="text-defaultSubtitle text-center text-base sm:text-2xl font-bold tracking-wide">
+                        Sua marca em evidência no mundo digital
+                    </h2>
+                </div>
+                <div class="w-full flex flex-col xl:flex xl:flex-row items-center justify-center gap-12">
+                    <div 
+                        class="h-64 flex flex-col gap-6 bg-gradient-to-r from-defaultLightPurple to-defaultDarkPurple text-white p-6 max-w-96 xl:max-w-xs shadow-lg rounded-xl"
+                    >
+                        <div class="flex flex-row items-center justify-start gap-2">
+                            <img src="./assets/cards/notebook.svg" alt="icone notebook" width="50" height="50" />
+                            <h2 class="text-defaultSubtitle text-2xl font-bold text-center">Sites</h2>
+                        </div>
+                        <p class="text-defaultSubtitle text-xs sm:text-sm text-justify">
+                            Apresente de forma clara e persuasiva os diferenciais da sua empresa e atraia novos clientes para o seu negócio, ampliando sua base de clientes satisfeitos.
+                        </p>
+                    </div>
+                    <div 
+                        class="h-64 flex flex-col gap-6 bg-defaultColor text-white p-6 max-w-96 xl:max-w-xs shadow-lg rounded-xl"
+                    >
+                        <div class="flex flex-row items-center justify-start gap-2">
+                            <img src="./assets/cards/house.svg" alt="icone notebook" width="50" height="50" />
+                            <h2 class="text-transparent bg-clip-text bg-gradient-to-tr from-defaultYellow to-defaultOrange text-defaultSubtitle text-base sm:text-2xl font-bold text-center">Lojas Virtuais</h2>
+                        </div>
+                        <p class="text-defaultSubtitle text-xs sm:text-sm text-justify">
+                            Transforme seu site em uma máquina de vendas eficiente e sem problemas, vendendo diretamente aos seus clientes.
+                        </p>
+                    </div>
+                    <div 
+                        class="h-64 flex flex-col gap-6 bg-defaultColor text-white p-6 max-w-96 xl:max-w-xs shadow-lg rounded-xl"
+                    >
+                        <div class="flex flex-row items-center justify-start gap-2">
+                            <img src="./assets/cards/coin.svg" alt="icone notebook" width="50" height="50" />
+                            <h2 class="text-transparent bg-clip-text bg-gradient-to-tr from-defaultYellow to-defaultOrange text-defaultSubtitle text-base sm:text-2xl font-bold text-center">Landing Page</h2>
+                        </div>
+                        <p class="text-defaultSubtitle text-xs sm:text-sm text-justify">
+                            Converta visitantes em clientes com eficiência e sem complicações, capturando leads qualificados e gerando resultados reais para o seu negócio.                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Section_3 -->
+        <div class="w-full h-auto relative xl:h-[100vh] bg-defaultColor">
+            <div class="hidden sm:block absolute -top-6 right-0">
+                <img 
+                    src="./assets/desenhos/circulo_roxo.svg" 
+                    alt="Circulo de cor roxa"
+                />
+            </div>
+            <div class="block sm:hidden absolute -top-6 right-0">
+                <img 
+                    width="50" 
+                    height="50" 
+                    src="./assets/desenhos/circulo_roxo.svg" 
+                    alt="Circulo de cor roxa"
+                />
+            </div>
+            <div 
+                class="w-full h-full flex flex-col lg:flex lg:flex-row-reverse items-center justify-between gap-24 m-auto max-w-[550px] md:max-w-[700px] lg:max-w-[850px] xl:max-w-[1200px] py-24"
+            >
+                <div class="w-full flex flex-col items-start justify-start gap-6 px-6 sm:px-0">
+                    <h1 class="text-white text-2xl sm:text-4xl font-bold tracking-wide sm:leading-[55px]    ">
+                        Porque preciso de um site?
+                        <br>
+                        Qual a importância para meu negócio?
+                    </h1>
+                    <p class="text-base text-defaultSubtitle w-auto sm:w-[550px]">
+                        Sua presença digital é fundamental para aumentar as vendas de uma empresa. Um site bem estruturado pode fornecer informações sobre produtos ou serviços e possibilitar a compra online. Além disso, um site pode aumentar a visibilidade da marca, gerar fidelização do cliente, atrair novos clientes e destacar a empresa da concorrência. Investir na criação e manutenção de um site profissional e funcional é essencial para qualquer negócio que deseja se destacar no mercado e aumentar suas vendas.
+                    </p>
+                    <div class="relative bg-defaultColorHeader p-4 rounded-lg">
+                        <p class="text-transparent bg-clip-text bg-gradient-to-tr from-defaultYellow to-defaultOrange text-center font-semibold">
+                            Saiba qual opção é mais adequada para o seu negócio.
+                        </p>
+                        <div class="absolute right-0 bottom-0 translate-y-6 translate-x-6">
+                            <img src="./assets/desenhos/arrow.svg" alt="Seta personalizada" width="50" height="50" />
+                        </div>
+                    </div>
+                </div>
+                <div class="relative flex flex-col items-center justify-center">
+                    <div class="z-10 hidden lg:block">
+                        <img 
+                            width="900" 
+                            height="900" 
+                            src="../markly/assets/desenhos/BG_mulheres_celular.png" 
+                            alt="Fundo roxo de imagem"
+                        />
+                    </div>
+                    <div class="z-10 block lg:hidden">
+                        <img 
+                            width="350" 
+                            height="350" 
+                            src="../markly/assets/desenhos/BG_mulheres_celular.png" 
+                            alt="Fundo roxo de imagem"
+                        />
+                    </div>
+                    <div class="z-10 hidden lg:block absolute xl:right-28 translate-y-[0.60rem]">
+                        <img 
+                            src="../markly/assets/imagens/mulheres_celular.png" 
+                            alt="Duas mulheres com celular em mãos"
+                        />
+                    </div>
+                    <div class="z-10 block lg:hidden absolute translate-y-4">
+                        <img 
+                            width="250"
+                            height="250"
+                            src="../markly/assets/imagens/mulheres_celular.png" 
+                            alt="Duas mulheres com celular em mãos"
+                        />
+                    </div>
+                    <div class="absolute -left-6 -bottom-6">
+                        <img 
+                            width="75"
+                            height="75"
+                            src="./assets/desenhos/circula_laranja_p.svg"
+                            alt="Circulo laranja"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <!-- Section_4 -->
+        <div class="w-full h-auto xl:h-[100vh] bg-[#000000]">
+            <div 
+                class="w-full h-full flex flex-col items-center justify-between gap-16 m-auto max-w-[550px] md:max-w-[700px] lg:max-w-[850px] xl:max-w-[1200px] py-24 px-6 sm:px-0"
+            >
+                <div class="w-full flex flex-col items-center justify-center gap-2 px-6 sm:px-0">
+                    <h2 class="text-defaultSubtitle text-center text-base sm:text-2xl font-bold tracking-wide">
+                        Por que escolher a 
+                        <span class="text-transparent bg-clip-text bg-gradient-to-tr from-defaultYellow to-defaultOrange">MARKLY</span>?
+                    </h2>
+                    <h2 class="text-defaultSubtitle text-center text-sm sm:text-lg font-semibold max-w-lg lg:max-w-[50rem]">
+                        Especialistas em criação de sites vamos te ajudar a mostrar seu produto ou serviço de forma profissional com um layout agradável ao seu público.
+                    </h2>
+                </div>
+                <div class="w-full flex flex-col md:flex md:flex-row items-center justify-between gap-12">
+                    <div class="w-full xl:w-1/2 flex flex-col items-start justify-start gap-6">
+                        <div class="flex flex-row items-start gap-6 max-w-lg">
+                            <span class="rounded-2xl py-2 px-4 bg-gradient-to-r from-defaultLightPurple to-defaultDarkPurple text-defaultSubtitle text-xl font-bold">1</span>
+                            <div class="flex flex-col items-start justify-start">
+                                <h2 class="text-defaultSubtitle text-2xl font-bold tracking-wide">Sites Modernos e Exclusivos</h2>
+                                <p class="text-defaultSubtitle/80 text-sm">
+                                    Nada de layouts prontos! Designs inteligentes e exclusivos para garantir que sua marca se destaque e se comunique de maneira eficaz com seu público.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row items-start gap-6 max-w-lg">
+                            <span class="rounded-2xl py-2 px-4 bg-gradient-to-r from-defaultYellow to-defaultOrange text-defaultSubtitle text-xl font-bold">2</span>
+                            <div class="flex flex-col items-start justify-start">
+                                <h2 class="text-defaultSubtitle text-2xl font-bold tracking-wide">Design Responsivo</h2>
+                                <p class="text-defaultSubtitle/80 text-sm">
+                                    Site adaptável para todos os dispositivos, com design responsivo, moderno e intuitivo, garante que seus clientes tenham fácil acesso ao seu site.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row items-start gap-6 max-w-lg">
+                            <span class="rounded-2xl py-2 px-4 bg-gradient-to-r from-defaultLightPurple to-defaultDarkPurple text-defaultSubtitle text-xl font-bold">3</span>
+                            <div class="flex flex-col items-start justify-start">
+                                <h2 class="text-defaultSubtitle text-2xl font-bold tracking-wide">Site Otimizado</h2>
+                                <p class="text-defaultSubtitle/80 text-sm">
+                                    Com um design otimizado e técnicas avançadas, garantimos que seu site será bem-sucedido e alcançará o máximo de efetividade para seus usuários e clientes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full xl:w-1/2">
+                        <img
+                            src="./assets/mockups/mockup_notebook.png"
+                            alt="Site em notebook"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Section_5 -->
+        <div class="w-full h-auto relative xl:h-[100vh] bg-defaultColorHeader">
+            <div class="absolute -top-6 left-0">
+                <img src="./assets/desenhos/circulo_laranja.svg" alt="Circulo laranja" />
+            </div>
+        </div>
+
+        <script type="text/javascript" src="./index.js"></script>
+    </body>
+</html>
