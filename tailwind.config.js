@@ -14,6 +14,7 @@ module.exports = {
         "defaultSubtitle": "#DEDEDE",
         "defaultYellow": "#FFBB00",
         "defaultOrange": "#FF6E05",
+        "defaultLightGray": "#323232",
       }
     },
   },
