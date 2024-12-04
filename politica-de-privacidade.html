@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="./output.css">
+      <link rel="stylesheet" href="./scroll.css">
+      <link rel="stylesheet" href="style.css">
+      <title>Política de Privacidade</title>
+   </head>
+   <body id="main">
+      <!-- Header -->
+      <header class="fixed top-0 z-50 w-full bg-defaultColorHeader shadow-defaultColorHeader/80 shadow-lg">
+         <div
+            class="m-auto max-w-[550px] md:max-w-[700px] lg:max-w-[850px] xl:max-w-[1200px] w-full flex flex-row items-center justify-between py-2 px-6 md:px-0">
+            <img src="./assets/logo.png" alt="Logo Markly" />
+            <i onclick="mostrarMenu()" id="menu" class="block md:hidden text-white text-2xl fas fa-bars"></i>
+            <i onclick="fecharMenu()" id="close" class="hidden text-white text-2xl fas fa-x"></i>
+            <ul class="uppercase hidden md:flex md:flex-row items-center gap-6 text-white font-medium">
+               <li><a href="/" class="transition-all ease-in-out duration-300 hover:text-defaultYellow">Home</a></li>
+               <li><a href="/#services"
+                     class="transition-all ease-in-out duration-300 hover:text-defaultYellow">Serviços</a></li>
+               <li><a href="/#portifolio"
+                     class="transition-all ease-in-out duration-300 hover:text-defaultYellow">Portfólio</a></li>
+               <li><a href="/#contact" class="transition-all ease-in-out duration-300 hover:text-defaultYellow">Contato</a>
+               </li>
+            </ul>
+            <button
+               class="hidden md:block transition-all ease-in-out duration-500 bg-gradient-to-r from-defaultYellow to-defaultOrange rounded-full text-white text-center py-[8px] px-6 font-medium hover:scale-105">
+               Orçamento
+            </button>
+         </div>
+      </header>
+      <div id="opcoesMenu" class="hidden transition-all ease-in-out duration-300 w-0 h-[100vh] bg-defaultColorHeader">
+         <ul class="uppercase flex flex-col justify-start items-start gap-6 p-6 text-white font-medium mt-20">
+            <li><a href="/" class="hover:text-defaultYellow">Home</a></li>
+            <li><a href="#services" class="hover:text-defaultYellow">Serviços</a></li>
+            <li><a href="#portifolio" class="hover:text-defaultYellow">Portfólio</a></li>
+            <li><a href="#contact" class="hover:text-defaultYellow">Contato</a></li>
+         </ul>
+      </div>
+      <div class="paragraphs">
+         <div>
+            <h1>Política de Privacidade</h1>
+            <p>
+               Esta Política de Privacidade descreve como a Agência Markly coleta,
+               usa e protege as informações pessoais dos usuários que visitam nosso site
+               (https://agenciamarkly.com). Se você tiver alguma dúvida sobre esta Política de Privacidade,
+               entre em contato conosco por meio de nosso formulário de contato.
+            </p>
+         </div>
+
+         <div>
+            <h2>Coleta de Informações</h2>
+            <p>
+               A Agência Markly pode coletar informações pessoais, como nome, endereço de e-mail e número de telefone,
+               quando um usuário preenche um formulário de contato ou faz um pedido em nosso site. Também podemos
+               coletar informações de navegação, como endereço IP, informações do navegador, páginas visitadas e duração
+               da visita.
+            </p>
+         </div>
+
+         <div>
+            <h2>Uso de informações</h2>
+            <p>A Agência Markly pode usar as informações coletadas para:</p>
+            <ol>
+               <li>Personalizar a experiência do usuário e oferecer conteúdo e publicidade relevantes.</li>
+               <li>Responder a perguntas e solicitações dos usuários.</li>
+               <li>Processar pedidos e pagamentos.</li>
+               <li>Melhorar nossos produtos e serviços.</li>
+               <li>Enviar e-mails promocionais e newsletters.</li>
+            </ol>
+
+         </div>
+
+         <div>
+            <h2>Compartilhamento de informações</h2>
+            <p>
+               A Agência Markly não vende, aluga ou compartilha informações pessoais dos usuários com terceiros,
+               exceto conforme necessário para fornecer nossos serviços ou conforme exigido por lei.
+            </p>
+         </div>
+
+         <div>
+            <h2>Cookies</h2>
+            <p>
+               A Agência Markly pode usar cookies e tecnologias semelhantes para coletar informações de navegação
+               e melhorar a experiência do usuário. Os usuários podem optar por desativar os cookies em seus
+               navegadores, mas isso pode afetar o uso do site.
+            </p>
+         </div>
+
+         <div>
+            <h2>Alterações na Política de Privacidade</h2>
+            <p>
+               A Agência Markly pode atualizar esta Política de Privacidade de tempos em tempos.
+               As alterações serão publicadas nesta página e entrarão em vigor imediatamente após a publicação.
+            </p>
+         </div>
+      </div>
+      <!-- Footer -->
+      <footer class="relative w-full h-auto bg-[#000000] flex flex-col items-center justify-center">
+         <div class="
+                  m-auto max-w-[550px] md:max-w-[700px] lg:max-w-[850px] xl:max-w-[1200px] px-6 sm:px-0 pt-24 pb-32
+                  flex flex-col lg:flex lg:flex-row items-start justify-between gap-12
+               ">
+            <ul class="w-auto lg:w-1/4 text-defaultSubtitle/80 space-y-4">
+               <li>
+                  <img src="./assets/logo.png" alt="Logo Markly" />
+               </li>
+               <li>
+                  Aprimore seus resultados e impulsione suas vendas com um website atraente, moderno e responsivo.
+               </li>
+               <li>
+                  Conte com a equipe de profissionais da Agência Markly!
+               </li>
+            </ul>
+            <div class="w-auto lg:w-1/4 flex flex-col items-start justify-start gap-4">
+               <h2 class="
+                           text-defaultYellow text-3xl font-extrabold bg-clip-text text-transparent
+                           bg-gradient-to-tr from-defaultYellow to-defaultOrange
+                     ">
+                  Nossos links
+               </h2>
+               <ul class="text-defaultSubtitle space-y-2">
+                  <li class="flex flex-row items-center gap-2">
+                     <img src="./assets/desenhos/icon_footer.svg" />
+                     <a href="/">Home</a>
+                  </li>
+                  <li class="flex flex-row items-center gap-2">
+                     <img src="./assets/desenhos/icon_footer.svg" />
+                     <a href="/#services">Nossos serviços</a>
+                  </li>
+                  <li class="flex flex-row items-center gap-2">
+                     <img src="./assets/desenhos/icon_footer.svg" />
+                     <a href="/#portifolio">Projetos realizados</a>
+                  </li>
+                  <li class="flex flex-row items-center gap-2">
+                     <img src="./assets/desenhos/icon_footer.svg" />
+                     <a href="/#contact">Fale conosco</a>
+                  </li>
+                  <li class="flex flex-row items-center gap-2">
+                     <img src="./assets/desenhos/icon_footer.svg" />
+                     <a href="/politica-de-privacidade.html">Política de privacidade</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="w-auto lg:w-1/4 flex flex-col items-start justify-start gap-4">
+               <h2 class="
+                           text-defaultYellow text-3xl font-extrabold bg-clip-text text-transparent
+                           bg-gradient-to-tr from-defaultYellow to-defaultOrange
+                     ">
+                  Nossas soluções
+               </h2>
+               <ul class="text-defaultSubtitle space-y-2">
+                  <li class="flex flex-row items-center gap-2">
+                     <img src="./assets/desenhos/icon_footer.svg" />
+                     <a>Site institucional</a>
+                  </li>
+                  <li class="flex flex-row items-center gap-2">
+                     <img src="./assets/desenhos/icon_footer.svg" />
+                     <a>Landing Page</a>
+                  </li>
+                  <li class="flex flex-row items-center gap-2">
+                     <img src="./assets/desenhos/icon_footer.svg" />
+                     <a>One Page</a>
+                  </li>
+                  <li class="flex flex-row items-center gap-2">
+                     <img src="./assets/desenhos/icon_footer.svg" />
+                     <a>Loja Virtual</a>
+                  </li>
+                  <li class="flex flex-row items-center gap-2">
+                     <img src="./assets/desenhos/icon_footer.svg" />
+                     <a>Blog</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="w-auto lg:w-1/4 flex flex-col items-start justify-start gap-4">
+               <h2 class="
+                           text-defaultYellow text-3xl font-extrabold bg-clip-text text-transparent
+                           bg-gradient-to-tr from-defaultYellow to-defaultOrange
+                     ">
+                  Siga-nos
+               </h2>
+               <ul class="text-defaultSubtitle flex flex-row items-center gap-6">
+                  <li class="w-14 h-14 bg-defaultColorHeader rounded-full flex flex-col items-center justify-center">
+                     <img src="./assets/desenhos/icon_whats.svg" alt="icone whatsapp" />
+                  </li>
+                  <li class="w-14 h-14 bg-defaultColorHeader rounded-full flex flex-col items-center justify-center">
+                     <img src="./assets/desenhos/icon_youtube.svg" alt="icone youtube" />
+                  </li>
+                  <li class="w-14 h-14 bg-defaultColorHeader rounded-full flex flex-col items-center justify-center">
+                     <img src="./assets/desenhos/icon_instagram.svg" alt="icone instagram" />
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div
+            class="absolute bottom-0 w-full h-16 sm:h-6 bg-defaultLightPurple flex flex-row items-center justify-center py-4">
+            <p class="text-center text-defaultSubtitle text-base">Agência Markly &copy; 2024 Todos os direitos reservados.
+            </p>
+         </div>
+      </footer>
+      <script type="text/javascript" src="./index.js"></script>
+   </body>
+</html>
